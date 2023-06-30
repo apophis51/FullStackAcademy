@@ -1,0 +1,96 @@
+function ready(fn) {
+     if (document.readyState !== 'loading') {
+          fn();
+     } else {
+          document.addEventListener('DOMContentLoaded', fn);
+     }
+}
+
+ready(function () {
+  /*EvaluationKIT START*/ var evalkit_jshosted =
+    document.createElement("script");
+  evalkit_jshosted.setAttribute("defer", "defer");
+  evalkit_jshosted.setAttribute("type", "text/javascript");
+  evalkit_jshosted.setAttribute(
+    "src",
+    "https://fullstackacademy.evaluationkit.com/canvas/js"
+  );
+  document
+    .getElementsByTagName("head")[0]
+    .appendChild(evalkit_jshosted); /*EvaluationKIT END*/
+
+  //This code updates the assignment page.
+  var element1 = document.getElementById("Fullstack-Assignment-Update1");
+  if (typeof element1 != "undefined" && element1 != null) {
+    var AssignmentButton =
+      document.getElementsByClassName("assignment-buttons");
+    AssignmentButton[0].style.textAlign = "left";
+    $(".assignment-buttons")
+      .clone(true, true)
+      .appendTo("#Start-Assignment-Button");
+    AssignmentButton[0].outerHTML = "";
+
+    //get the text for the Main Title
+    var node = document.getElementById("Main-Title");
+    var MainTitle = node.innerHTML;
+    //get the text for the Sub-Title
+    var node = document.getElementById("Sub-Title");
+    var SubTitle = node.innerHTML;
+
+    //insert the title code
+    var TitleContent = document.getElementsByClassName("title-content");
+    TitleContent[0].style.position = "relative";
+    TitleContent[0].innerHTML =
+      '<img class="rotate-180 opacity-half" style="height: 60px;" src="https://content.bridgepointeducation.com/curriculum/file/f881c28d-b8b7-4695-a677-bed16afbf12d/1/Shadow.png" alt=""/> <div class="header-bar color2-gradient" style="padding: 35px 40px 20px"> <h1 style="line-height: 1.15em; font-size: 5.5vmin;">' +
+      MainTitle +
+      '</h1> </div> <div style="position: absolute; top: 30px; margin: 0 45px;"> <div class="color1-gradient letter-spaced uppercase" style="padding: 5px 30px 5px; "> <h3 style="font-size: 2.5vmin;">' +
+      SubTitle +
+      '</h3> </div> <img class="" style="width:0; min-width:100%; height: 40px;" src="https://content.bridgepointeducation.com/curriculum/file/f881c28d-b8b7-4695-a677-bed16afbf12d/1/Shadow.png" alt=""/> </div>';
+    var AssignmentTitle = document.getElementsByClassName("assignment-title");
+    AssignmentTitle[0].style.margin = "0";
+
+    var assignmentButtons =
+      document.getElementsByClassName("assignment-buttons");
+    assignmentButtons[0].style.padding = "0";
+
+    var StudentAssignmentOverview = document.getElementsByClassName(
+      "student-assignment-overview"
+    );
+    StudentAssignmentOverview[0].classList.add("color1-gradient");
+    StudentAssignmentOverview[0].style.color = "#FFF";
+    StudentAssignmentOverview[0].style.padding = "10px 0 10px 40px";
+    StudentAssignmentOverview[0].style.marginBottom = "0px";
+
+    var Clear = document.getElementsByClassName("clear");
+    Clear[1].innerHTML =
+      "<img style='vertical-align: top; max-width: none; width: 100%;' src='https://content.bridgepointeducation.com/curriculum/file/410967aa-1c7a-4869-ad39-7b632464bf7a/1/1090ShadowPlain.png' alt='Assignment' width='838' height='30' data-api-returntype='File' data-decorative='true'/>";
+  }
+
+  //This code updates the quiz page.
+  var element2 = document.getElementById("Fullstack-Quiz-Update1");
+  if (typeof element2 != "undefined" && element2 != null) {
+    var node = document.getElementById("Sub-Title");
+    var QuizTitle = node.innerHTML;
+
+    var QuizTitleBox = document.getElementById("quiz_title");
+    QuizTitleBox.style.position = "relative";
+
+    QuizTitleBox.innerHTML =
+      '<img class="rotate-180 opacity-half" style="height: 60px;" <img class="rotate-180 opacity-half" style="height: 60px;" src="https://content.bridgepointeducation.com/curriculum/file/f881c28d-b8b7-4695-a677-bed16afbf12d/1/Shadow.png" alt=""/> <div class="header-bar color2-gradient" style="padding: 0px;"> <img id="633" style="mix-blend-mode: luminosity;" height="200" src="https://content.bridgepointeducation.com/curriculum/file/f881c28d-b8b7-4695-a677-bed16afbf12d/1/Quiz.jpg"> </div> <div style="position: absolute; top: 30px; margin: 0 45px;"> <div class="color1-gradient letter-spaced uppercase" style="padding: 5px 30px 5px;"> <h3 style="font-size: 2.5vmin;">' +
+      QuizTitle +
+      '</h3> </div> <img class="" style="width:0; min-width:100%; height: 40px; vertical-align: top;" src="https://content.bridgepointeducation.com/curriculum/file/f881c28d-b8b7-4695-a677-bed16afbf12d/1/Shadow.png" alt=""/> </div>';
+
+    QuizTitleBox.style.margin = "0";
+
+    var QuizStudentDetails = document.getElementById("quiz_student_details");
+    QuizStudentDetails.classList.add("color1-gradient");
+    QuizStudentDetails.style.color = "#FFF";
+    QuizStudentDetails.style.padding = "10px 0 10px 40px";
+
+    var Clear = document.getElementsByClassName("clear");
+    Clear[1].innerHTML =
+      "<img style='vertical-align: top; max-width: none; width: 100%;' src='https://content.bridgepointeducation.com/curriculum/file/410967aa-1c7a-4869-ad39-7b632464bf7a/1/1090ShadowPlain.png' alt='Assignment' width='838' height='30' data-api-returntype='File' data-decorative='true'/>";
+  }
+});
+
+// JavaScript Document

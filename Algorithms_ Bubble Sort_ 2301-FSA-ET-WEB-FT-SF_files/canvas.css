@@ -1,0 +1,206 @@
+@import 'https://fullstackacademy.evaluationkit.com/canvas/css';
+/**
+ * Description: FullStack Main CSS
+ * Last update: 8/27/2021
+ */
+
+/*! Basscss | http://basscss.com | MIT License */
+
+
+/********************
+   Resource Format
+********************/
+.resourceformat ul {
+	margin-top: -10px;
+	padding-left: 60px;
+}
+.resourceformat p {
+	padding-left: 60px;
+	text-indent: -30px;
+}
+.resourceformat ul ul {
+	margin-top: 0px;
+	padding-left: 10px;
+}
+
+
+/********************
+   Custom Header
+********************/
+.custom-header {
+	background: #a41014; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #a41014 , #df4b4f); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #a41014 , #df4b4f);  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	color: #ffffff;
+	font-size: 1.25em;
+	font-weight: 600;
+	padding: 0.3em 1em;
+}
+
+
+/********************************************
+     Custom Page - Lecture Video Replay
+********************************************/
+.content-layer {
+	background: #ffffff;
+	bottom: 0;
+	box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	-moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+	color: #000;
+	font-size: 1.1em;
+	left: 10px;
+	opacity: 0.95;
+	padding: 3% 5%;
+	right: 10px;
+	top: 50%;
+	width: 100%;
+}
+.content-custom {
+	margin: 40px auto;
+	padding: 1.5% 5%;
+	width: 100%;
+}
+.no-border-radius {
+	border-radius: 0;
+}
+.page-title {
+	display: none;
+}
+.pages.show.home .show-content {
+	padding-top: 0 !important;
+}
+
+
+/********************************************
+     GPK Adds 
+********************************************/
+.accent-color-1 {
+     color: #cb2326;     
+} 
+.base-color-1 {
+     color: #333333;     
+} 
+
+.color1-gradient {
+	background: #cb2326 !important; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff2c2f , #cb2326) !important; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff2c2f , #cb2326) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	color: #ffffff;
+}
+
+.color2-gradient {
+	background: #333333 !important; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4d4d4d , #333333) !important; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4d4d4d , #333333) !important; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	color: #ffffff;
+}
+
+.color3-gradient {
+	background: #f2f2f2 !important; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #d9d9d9 , #f2f2f2) !important; /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom, #f2f2f2 , #d9d9d9) !important;  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
+	color: #ffffff;
+}
+
+.header-bar {
+     font-size: 1.9em;
+     border-bottom: none;
+}
+
+.letter-spaced {
+     letter-spacing: 5px;
+}
+
+.align-items-center {
+     -webkit-box-align: center !important;
+     -ms-flex-align: center !important;
+     align-items: center !important; 
+}
+.justify-content-center{
+     justify-content: center;
+}
+.rotate-180 {
+     transform: rotate(180deg);
+}
+
+.opacity-half{
+     opacity: 0.5;
+     filter: alpha(opacity=50);
+}
+
+.opacity-quarter{
+     opacity: 0.25;
+     filter: alpha(opacity=25);
+}
+.uppercase {
+     text-transform: uppercase;
+}
+
+.text15 {
+     font-size: 1.5em;     
+} 
+
+.text20 {
+     font-size: 2em;     
+} 
+
+.clean {
+     padding: 0;
+     margin: 0;
+} 
+.accent-header h3, .accent-header h2 {
+     display: inline-block; 
+     font-size:calc(10px + 1vmin); 
+}
+.headline h3 {
+     margin: 6px 0 0px 0; 
+     line-height: 1.25em;
+}
+.header-bar h1 {
+     line-height: 1.15em; 
+     font-size: 5.5vmin;
+}
+.header-bar h2 {
+     line-height: 1.15em; 
+     font-size: 5.5vmin;
+}
+.header-box-title h3 {
+     margin: 8px 0 0 0;
+}
+.video-linktext p {
+     font-size: 16px; 
+     margin-bottom: 0px;
+}
+.video-linktext {
+}
+.overview-image img {
+     width: 100%; 
+     position: relative;       
+     z-index: -1;      
+}
+.text-decoration-none {
+     text-decoration: none !important;
+}
+
+/********************************************
+     GPK RCE Helps
+********************************************/
+#Sub-Title {
+     display: none;
+}
+
+#Main-Title {
+     display: none;
+}
+
+/********************************************
+     GPK Canvas Margin Fix
+********************************************/
+.show-content {
+     padding: 0 !important;
+     overflow-x: hidden !important;
+}
+.user_content {
+     overflow-x: hidden !important;
+}
